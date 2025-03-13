@@ -1,6 +1,6 @@
-async function getUsers() {
+async function getTareas() {
     try {
-        const response = await fetch('http://localhost:3000/users', {
+        const response = await fetch('http://localhost:3000/tareas', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -19,21 +19,20 @@ async function getUsers() {
     }
 }
 
+
 //////////LLAMADO POST//////////
 
-async function postUsers(nombre,email,contrasena) {
+async function postTareas(tarea) {
     try {
      
         const userData = { 
-            nombre,
-            email,
-            contrasena
-        
+            
+            tarea
         };
 
 
 
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:3000/tareas", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -55,22 +54,17 @@ async function postUsers(nombre,email,contrasena) {
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsers(nombre,email,contrasena,id) 
+async function updateTareas(tarea,id) 
 {
     try {
      
         const userData = { 
-            nombre, 
-            email,
-            contrasena
+            tarea
         
         };
 
 
-        
-
-
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3000/tareas/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -87,13 +81,12 @@ async function updateUsers(nombre,email,contrasena,id)
 }
 
 
-
 //////////////LLAMADO DELETE/////////////
 
 
-async function deleteUser(id) {
+async function deleteTareas(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3000/tareas/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -111,4 +104,4 @@ async function deleteUser(id) {
     }
 }
 
-export default {getUsers, postUsers,deleteUser,updateUsers,}
+export default {getTareas, postTareas,deleteTareas,updateTareas}

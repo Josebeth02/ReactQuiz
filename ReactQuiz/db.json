@@ -1,9 +1,11 @@
 {
-    "users":[
-        
-    ],
-
-    "contrasena":[
-
-    ]
+  "users": [
+    {
+      "id": "b981",
+      "nombre": "Josebeth",
+      "email": "Jos@gmail.com",
+      "contrasena": "0212"
+    }
+  ],
+  "tareas": []
 }

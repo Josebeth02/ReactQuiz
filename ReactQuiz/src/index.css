@@ -1,1 +1,98 @@
+body {
+  background-color: #eee;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.padre {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.h1 {
+  color: rgb(67, 67, 132);
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+ 
+.input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  color:black;
+  box-shadow: 0 0.4rem #dfd9d9;
+}
+
+button {
+  color:black;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background-color: #eee;
+  margin: 10px;
+}
+.h3{
+  color: rgb(67, 67, 132);
+  font-size: 22px;
+}
+
+
+.inputTodos {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+.divPrincipal{
+  padding: 16px;
+  font-size: .85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+.divPrincipal{
+  font-weight: bold;
+  color: #0066ff;
+  transition: color .3s ease;
+}
+.divPrincipal {
+  color: #005ce6;
+  text-decoration: underline;
+}
+.boton{
+  background-color: #005ce6;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
 
